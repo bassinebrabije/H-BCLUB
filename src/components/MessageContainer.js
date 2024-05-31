@@ -21,7 +21,7 @@ const MessageContainer = () => {
 
     return (
         <>
-            <div id="messageContainer" className="fixed z-40 bottom-4 left-7 mb-4 mr-4" style={{ display: 'none' }}>
+            <div id="messageContainer" className="fixed z-50 bottom-4 left-7 mb-4 mr-4" style={{ display: 'none' }}>
                 <div className="rounded-lg shadow-lg p-4 bg-[#FF0000]">
                     <div className="flex items-center justify-between mb-2">
                         <div className="flex items-center">
