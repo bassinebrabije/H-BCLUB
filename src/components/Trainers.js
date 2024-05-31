@@ -21,7 +21,7 @@ function Trainers() {
                     <div className="grid pt-8 grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3">
                         <div className="group relative m-auto h-96 w-full max-w-xs bg-[#FF0000] cursor-pointer overflow-hidden rounded-lg shadow-md">
                             <div className="absolute left-0 top-0 h-full w-full transition-all duration-300 ease-in-out group-hover:-top-96">
-                                <img className="h-4/6 w-full object-cover" src={Tri} alt="Brabije Yassine" />
+                                <img className="h-4/6 w-full object-cover" src={Tri} alt="img" loading="lazy" />
                                 <h1 className="mt-4 px-4 text-center text-xl tracking-wider font-semibold text-white">Brabije Yassine</h1>
                                 <h1 className="text-center font-serif text-white">Rate Trainer <br />⭐⭐⭐⭐⭐</h1>
                                 <p className="mt-1 px-4 text-center text-sm text-white font-light">Lorem ipsum, dolor sit amet consectetur. . .</p>
@@ -33,7 +33,7 @@ function Trainers() {
                         </div>
                         <div className="group relative m-auto h-96 w-full max-w-xs bg-[#FF0000] cursor-pointer overflow-hidden rounded-lg shadow-md">
                             <div className="absolute left-0 top-0 h-full w-full transition-all duration-300 ease-in-out group-hover:-top-96">
-                                <img className="h-4/6 w-full object-cover" src={Tri2} alt="Nisrine Hamere" />
+                                <img className="h-4/6 w-full object-cover" src={Tri2} alt="img" loading="lazy" />
                                 <h1 className="mt-4 px-4 text-center text-xl tracking-wider font-semibold text-white">Nisrine Hamere</h1>
                                 <h1 className="text-center font-serif text-white">Rate Trainer <br />⭐⭐⭐⭐⭐</h1>
                                 <p className="mt-1 px-4 text-center text-sm text-white font-light">Lorem ipsum, dolor sit amet consectetur. . .</p>
@@ -45,7 +45,7 @@ function Trainers() {
                         </div>
                         <div className="group relative m-auto h-96 w-full max-w-xs bg-[#FF0000] cursor-pointer overflow-hidden rounded-lg shadow-md">
                             <div className="absolute left-0 top-0 h-full w-full transition-all duration-300 ease-in-out group-hover:-top-96">
-                                <img className="h-4/6 w-full object-cover" src={Tri5} alt="Borney Exiteid" />
+                                <img className="h-4/6 w-full object-cover" src={Tri5} alt="img" loading="lazy" />
                                 <h1 className="mt-4 px-4 text-center text-xl tracking-wider font-semibold text-white">Borney Exiteid</h1>
                                 <h1 className="text-center font-serif text-white">Rate Trainer <br />⭐⭐⭐⭐⭐</h1>
                                 <p className="mt-1 px-4 text-center text-sm text-white font-light">Lorem ipsum, dolor sit amet consectetur. . .</p>
@@ -57,7 +57,7 @@ function Trainers() {
                         </div>
                         <div className="group relative m-auto h-96 w-full max-w-xs bg-[#FF0000] cursor-pointer overflow-hidden rounded-lg shadow-md">
                             <div className="absolute left-0 top-0 h-full w-full transition-all duration-300 ease-in-out group-hover:-top-96">
-                                <img className="h-4/6 w-full object-cover" src={Tri4} alt="Elsa Windia" />
+                                <img className="h-4/6 w-full object-cover" src={Tri4} alt="img" loading="lazy" />
                                 <h1 className="mt-4 px-4 text-center text-xl tracking-wider font-semibold text-white">Elsa Windia</h1>
                                 <h1 className="text-center font-serif text-white">Rate Trainer <br />⭐⭐⭐⭐⭐</h1>
                                 <p className="mt-1 px-4 text-center text-sm text-white font-light">Lorem ipsum, dolor sit amet consectetur. . .</p>
@@ -69,7 +69,7 @@ function Trainers() {
                         </div>
                         <div className="group relative m-auto h-96 w-full max-w-xs bg-[#FF0000] cursor-pointer overflow-hidden rounded-lg shadow-md">
                             <div className="absolute left-0 top-0 h-full w-full transition-all duration-300 ease-in-out group-hover:-top-96">
-                                <img className="h-4/6 w-full object-cover" src={Tri3} alt="Geourge Aryo" />
+                                <img className="h-4/6 w-full object-cover" src={Tri3} alt="img" loading="lazy" />
                                 <h1 className="mt-4 px-4 text-center text-xl tracking-wider font-semibold text-white">Geourge Aryo</h1>
                                 <h1 className="text-center font-serif text-white">Rate Trainer <br />⭐⭐⭐⭐⭐</h1>
                                 <p className="mt-1 px-4 text-center text-sm text-white font-light">Lorem ipsum, dolor sit amet consectetur. . .</p>
@@ -81,7 +81,7 @@ function Trainers() {
                         </div>
                         <div className="group relative m-auto h-96 w-full max-w-xs bg-[#FF0000] cursor-pointer overflow-hidden rounded-lg shadow-md">
                             <div className="absolute left-0 top-0 h-full w-full transition-all duration-300 ease-in-out group-hover:-top-96">
-                                <img className="h-4/6 w-full object-cover" src={Tri6} alt="Amara Bond" />
+                                <img className="h-4/6 w-full object-cover" src={Tri6} alt="img" loading="lazy" />
                                 <h1 className="mt-4 px-4 text-center text-xl tracking-wider font-semibold text-white">Amara Bond</h1>
                                 <h1 className="text-center font-serif text-white">Rate Trainer <br />⭐⭐⭐⭐⭐</h1>
                                 <p className="mt-1 px-4 text-center text-sm text-white font-light">Lorem ipsum, dolor sit amet consectetur. . .</p>

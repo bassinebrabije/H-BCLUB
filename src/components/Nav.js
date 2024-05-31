@@ -55,7 +55,7 @@ const Navbar = () => {
                 id="home"
             >             <div className="flex flex-col  max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
                     <div className="p-4 flex flex-row items-center justify-between">
-                        <a href="/" ><img src={logo} className='h-10' /></a>
+                        <a href="/" ><img src={logo} className='h-10' alt="logo" loading="lazy" /></a>
                         <button className="md:hidden rounded-lg focus:outline-none focus:shadow-outline" onClick={() => setOpen(!open)}>
                             <svg fill="#FFF" viewBox="0 0 20 20" className="w-6 h-6">
                                 <path className={`${!open ? 'block' : 'hidden'}`} fillRule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clipRule="evenodd"></path>

@@ -7,7 +7,7 @@ function Contact() {
                 <section class="mx-auto max-w-screen-xl md:rounded-md  md:shadow-lg">
                     <div class="grid grid-cols-4  lg:grid-cols-3">
                         <div class="col-span-4  px-8 py-10  md:col-span-2  md:px-10 md:py-12 lg:col-span-1">
-                            <img src={Contactbg} alt="Contact image" class="w-full h-auto mb-6" />
+                            <img src={Contactbg} class="w-full h-auto mb-6" alt="img" loading="lazy" />
                         </div>
                         <div class="order-first col-span-4 max-w-screen-md px-8 py-10 md:order-last md:col-span-2 md:px-10 md:py-12">
 

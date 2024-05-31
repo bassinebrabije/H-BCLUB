@@ -27,7 +27,7 @@ function Experience() {
 
                         <div>
                             <div class=" overflow-hidden pl-10 rounded-lg  shadow-lg md:h-auto">
-                                <img src={Eximg} loading="lazy" alt="Photo by Martin Sanchez" class=" object-cover object-center" />
+                                <img src={Eximg} alt="img" class=" object-cover object-center" loading="lazy" />
                             </div>
                         </div>
 

@@ -1,6 +1,5 @@
 import React from 'react';
-import Heroo from '../image/Hero.png'; // Adjust the path as needed
-
+import Heroo from '../image/Hero.png';
 function Hero() {
     const sectionStyle = {
         backgroundImage: `url(${Heroo})`,
