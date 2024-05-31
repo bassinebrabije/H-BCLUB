@@ -18,9 +18,9 @@ function Experience() {
                             <p className="text-white sm:text-[#9A9A9A] text-sm font-light mb-12 sm:w-[30rem]">
                                 Dictumst egestas ut facilisi vel. Sem consequat fermentum pellentesque risus purus quis gravida. Nulla porttitor ultrices facilisis non commodo diam morbi cursus eu. Semper ut in mauris gravida id cursus urna. Magnis vulputate orci risus felis eget lectus morbi.
                             </p>
-                            <a href="#"
+                            <a href="/"
                                 className="text-[#FF0000] border border-[#FF0000] hover:bg-[#FF0000] hover:text-[#FFF] py-2 px-8 transition duration-200">
-                                Shop Now
+                                Started now
                             </a>
                         </div>
 

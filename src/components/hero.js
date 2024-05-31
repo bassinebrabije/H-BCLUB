@@ -21,9 +21,9 @@ function Hero() {
                 <p className="text-white text-base font-light sm:text-[#9A9A9A]	 mb-12 sm:w-[30rem]">
                     Gym training is a structured and disciplined approach to physical exercise that focuses on strength, endurance and overall fitness improvement.
                 </p>
-                <a href="#"
+                <a href="/"
                     className=" text-[#FF0000] border border-[#FF0000]   hover:bg-[#FF0000] hover:text-[#FFF] py-2 px-8   tracking-wider  transition duration-200">
-                    Shop Now
+                    Started now
                 </a>
                 {/* Added grid here */}
                 <div className="grid grid-cols-1 mt-10 text-center sm:text-left md:grid-cols-3 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
