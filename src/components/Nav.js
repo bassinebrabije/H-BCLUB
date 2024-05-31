@@ -15,7 +15,7 @@ const Navbar = () => {
     const [open, setOpen] = useState(false);
     const [scroll, setScroll] = useState(false);
     const [isMobileOrTablet, setIsMobileOrTablet] = useState(false);
-    const [loading, setLoading] = useState(true); // New state for loading
+    const [loading, setLoading] = useState(true);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -62,7 +62,7 @@ const Navbar = () => {
 
     return (
         <>
-            {loading && ( // Conditionally render loading animation
+            {loading && (
                 <div className="fixed top-0 left-0 w-full h-full z-50 flex justify-center items-center bg-[#000]">
                     <div className="animate-pulse">
                         <img src={logo} alt="Logo" className="w-[15rem] h-[10rem] text-white" />
@@ -103,8 +103,6 @@ const Navbar = () => {
             <Contact id="Contact" />
             <Footer />
             <MessageContainer />
-
-
         </>
     );
 };
