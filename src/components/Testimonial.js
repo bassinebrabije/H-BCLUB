@@ -6,7 +6,7 @@ function Testimonial() {
             <div style={{ backgroundImage: `url(${Bg})`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }} id="Testimonial">
                 <div className="max-w-7xl mx-auto px-6 md:px-12 xl:px-6">
                     <div className="mb-10 space-y-4 px-6 md:px-0">
-                        <h1 className="text-4xl font-semibold leading-7 text-white tracking-wider sm:text-4xl xl:text-6xl text-center">
+                        <h1 className="text-4xl font-semibold leading-10 text-white tracking-wider sm:text-4xl xl:text-6xl text-center">
                             What <span className="text-[#FF0000] "> clients say </span>   with us
                         </h1>
                     </div>

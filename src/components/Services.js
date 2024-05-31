@@ -8,7 +8,7 @@ function Services() {
                 <div className="mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center">
 
-                        <h1 className="text-4xl font-semibold leading-7 tracking-wider text-white sm:text-4xl xl:text-6xl text-center">
+                        <h1 className="text-4xl font-semibold leading-10 tracking-wider text-white sm:text-4xl xl:text-6xl text-center">
                             Why <span className="text-[#FF0000]"> Choose Us </span>
                         </h1>
                         <p className='text-[#9A9A9A] text-sm pt-3 font-light tracking-widest' >Gym workouts offer a versatile and customizable experience,<br className="hidden sm:block" /> allowing everyone to set specific fitness goals.</p>
