@@ -12,6 +12,7 @@ import logo from '../image/logo.png';
 const Navbar = () => {
     const [open, setOpen] = useState(false);
     const [scroll, setScroll] = useState(false);
+    const [isMobileOrTablet, setIsMobileOrTablet] = useState(false);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -22,11 +23,22 @@ const Navbar = () => {
             }
         };
 
+        const handleResize = () => {
+            setIsMobileOrTablet(window.innerWidth <= 768);
+        };
+
+        // Initial check
+        handleResize();
+
         window.addEventListener('scroll', handleScroll);
+        window.addEventListener('resize', handleResize);
+
         return () => {
             window.removeEventListener('scroll', handleScroll);
+            window.removeEventListener('resize', handleResize);
         };
     }, []);
+
 
     const scrollToSection = (id) => {
         const element = document.getElementById(id);
@@ -37,12 +49,15 @@ const Navbar = () => {
 
     return (
         <>
-            <div className={`w-full  fixed z-50 transition-colors duration-300 border-b  border-[#fff] border-opacity-30  ${scroll ? 'bg-black' : 'bg-transparent'}`} id='home'>
-                <div className="flex flex-col  max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
+            <div
+                className={`w-full fixed z-50 transition-colors duration-300 border-b border-[#fff] border-opacity-30 ${isMobileOrTablet ? 'bg-[#000]' : scroll ? 'bg-[#000] bg-opacity-30 backdrop-blur-lg' : 'bg-transparent'
+                    }`}
+                id="home"
+            >             <div className="flex flex-col  max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
                     <div className="p-4 flex flex-row items-center justify-between">
-                        <a href="#" ><img src={logo} className='h-8' /></a>
+                        <a href="/" ><img src={logo} className='h-10' /></a>
                         <button className="md:hidden rounded-lg focus:outline-none focus:shadow-outline" onClick={() => setOpen(!open)}>
-                            <svg fill="currentColor" viewBox="0 0 20 20" className="w-6 h-6">
+                            <svg fill="#FFF" viewBox="0 0 20 20" className="w-6 h-6">
                                 <path className={`${!open ? 'block' : 'hidden'}`} fillRule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clipRule="evenodd"></path>
                                 <path className={`${open ? 'block' : 'hidden'}`} fillRule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clipRule="evenodd"></path>
                             </svg>
@@ -54,6 +69,9 @@ const Navbar = () => {
                         <a className="px-4 py-2 mt-2 tracking-wider text-sm  cursor-pointer	 text-white rounded-lg md:mt-0 md:ml-4 hover:text-[#FF0000]" onClick={() => scrollToSection('Trainers')}>Trainers</a>
                         <a className="px-4 py-2 mt-2 tracking-wider text-sm cursor-pointer	  text-white rounded-lg md:mt-0 md:ml-4 hover:text-[#FF0000]" onClick={() => scrollToSection('Testimonial')}>Testimonial</a>
                         <a className="px-4 py-2 mt-2 tracking-wider text-sm  cursor-pointer	 text-white rounded-lg md:mt-0 md:ml-4 hover:text-[#FF0000]" onClick={() => scrollToSection('Contact')}>Contact us</a>
+                        <a className="px-4 py-2  tracking-wider text-sm  cursor-pointer bg-[#FF0000]	 text-white rounded-lg md:mt-0 md:ml-4 " >started now</a>
+
+
                     </nav>
                 </div>
             </div>

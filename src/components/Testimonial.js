@@ -26,7 +26,7 @@ function Testimonial() {
                             </div>
                         </div>
                         <div className="border border-[#FF0000] rounded-lg p-8 text-center md:w-1/3">
-                            <p className="font-bold uppercase text-white">John Doe</p>
+                            <p className="font-bold uppercase text-white">MR. Ahmed zellou</p>
                             <p className="text-xl font-light italic text-white">"I am extremely grateful for the positive impact gym training has had on my life; through consistent training, expert guidance from coaches, and access to top-notch facilities, I have witnessed a remarkable transformation in strength, endurance, and overall fitness levels."</p>
                             <div className="flex items-center justify-center space-x-2 mt-4">
                                 ⭐⭐⭐⭐⭐

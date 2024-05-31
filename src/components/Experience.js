@@ -12,10 +12,10 @@ function Experience() {
                                 we have a lot of<br className='pt-20' />
                                 <span className="text-[#FF0000]">experience</span>
                             </h1>
-                            <p className="text-[#9A9A9A] text-sm font-light mb-3 w-[30rem]">
+                            <p className="text-white sm:text-[#9A9A9A] text-sm font-light mb-3 sm:w-[30rem]">
                                 In quisque nunc dictumst etiam pellentesque et. Vel malesuada diam lorem tellus. Amet mauris feugiat ipsum natoque odio donec. Sit at lacus consequat justo odio condimentum dui. Faucibus id blandit feugiat mi tellus sit etiam donec aliquam.
                             </p>
-                            <p className="text-[#9A9A9A] text-sm font-light mb-12 w-[30rem]">
+                            <p className="text-white sm:text-[#9A9A9A] text-sm font-light mb-12 sm:w-[30rem]">
                                 Dictumst egestas ut facilisi vel. Sem consequat fermentum pellentesque risus purus quis gravida. Nulla porttitor ultrices facilisis non commodo diam morbi cursus eu. Semper ut in mauris gravida id cursus urna. Magnis vulputate orci risus felis eget lectus morbi.
                             </p>
                             <a href="#"
