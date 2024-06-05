@@ -90,8 +90,7 @@ const Navbar = () => {
                         <a className="px-4 py-2 mt-2 tracking-wider text-sm  cursor-pointer	 text-white rounded-lg md:mt-0 md:ml-4 hover:text-[#FF0000]" onClick={() => scrollToSection('Services')}>Service</a>
                         <a className="px-4 py-2 mt-2 tracking-wider text-sm  cursor-pointer	 text-white rounded-lg md:mt-0 md:ml-4 hover:text-[#FF0000]" onClick={() => scrollToSection('Trainers')}>Trainers</a>
                         <a className="px-4 py-2 mt-2 tracking-wider text-sm cursor-pointer	  text-white rounded-lg md:mt-0 md:ml-4 hover:text-[#FF0000]" onClick={() => scrollToSection('Testimonial')}>Testimonial</a>
-                        <a className="px-4 py-2 mt-2 tracking-wider text-sm  cursor-pointer	 text-white rounded-lg md:mt-0 md:ml-4 hover:text-[#FF0000]" onClick={() => scrollToSection('Contact')}>Contact us</a>
-                        <a className="px-4 py-2  tracking-wider text-sm  cursor-pointer bg-[#FF0000]	 text-white rounded-lg md:mt-0 md:ml-4 " href='/' >Started now</a>
+                        <a className="px-4 py-2  tracking-wider text-sm  cursor-pointer bg-[#FF0000]	 text-white rounded-lg md:mt-0 md:ml-4 " onClick={() => scrollToSection('Contact')} >Started now</a>
                     </nav>
                 </div>
             </div>
