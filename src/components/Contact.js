@@ -54,7 +54,7 @@ function Contact() {
         }
 
         try {
-            // First axios post request to /inscriptions
+
             await axios.post('http://localhost:8000/api/inscriptions', {
                 full_name: fullName,
                 email: email,
@@ -64,10 +64,13 @@ function Contact() {
             setShowAlert(true);
             setTimeout(() => {
                 setShowAlert(false);
-                window.location.href = '/';
+
             }, 4000);
-            // Second axios post request to /send-email
-            const response = await axios.post('http://localhost:8000/api/send-email', emailData);
+
+            await axios.post('http://localhost:8000/api/send-email', emailData);
+
+            window.location.href = '/';
+
 
         } catch (error) {
             console.error(error);
