@@ -9,14 +9,12 @@ function Contact() {
     const [phoneNumber, setPhoneNumber] = useState('');
     const [ville, setVille] = useState('');
     const [villes, setVilles] = useState([]);
-    const [isEmailValid, setIsEmailValid] = useState(true);
     const [showAlert, setShowAlert] = useState(false);
+    const [errorMessage, setErrorMessage] = useState('');
 
     useEffect(() => {
         setVilles(villesData);
     }, []);
-
-
 
     const handlePhoneChange = (e) => {
         const value = e.target.value;
@@ -24,30 +22,36 @@ function Contact() {
         setPhoneNumber(numericValue);
     };
 
-
-
     const handleSubmit = async (e) => {
         e.preventDefault();
-        const emailData = {
-            email,
-            fullName,
-        };
 
-        await axios.post('http://localhost:8000/api/inscriptions', {
-            full_name: fullName,
-            email: email,
-            phone_number: phoneNumber,
-            ville: ville,
-        });
-        setShowAlert(true);
-        setTimeout(() => {
-            setShowAlert(false);
-        }, 4000);
 
-        await axios.post('http://localhost:8000/api/send-email', emailData);
+        try {
+            await axios.post('http://localhost:8000/api/inscriptions', {
+                full_name: fullName,
+                email: email,
+                phone_number: phoneNumber,
+                ville: ville,
+            });
 
-        window.location.href = '/';
+            setShowAlert(true);
+            setTimeout(() => {
+                setShowAlert(false);
+            }, 4000);
 
+            await axios.post('http://localhost:8000/api/send-email', {
+                email,
+                fullName,
+            });
+
+            window.location.href = '/';
+        } catch (error) {
+            if (error.response && error.response.status === 422) {
+                setErrorMessage('Email already used. Please use a different email.');
+            } else {
+                setErrorMessage('An error occurred. Please try again.');
+            }
+        }
     };
 
     return (
@@ -66,6 +70,11 @@ function Contact() {
                                 Get 50% off the first three classes you sign up for this month with any GYM membership
                             </p>
                             <form onSubmit={handleSubmit}>
+                                {errorMessage && (
+                                    <div className="mb-4 text-red-500 text-sm">
+                                        {errorMessage}
+                                    </div>
+                                )}
                                 <div className="md:col-gap-4 mb-5 grid md:grid-cols-2 gap-x-5">
                                     <input
                                         type="text"
@@ -75,15 +84,20 @@ function Contact() {
                                         placeholder="Enter Your Name..."
                                         required
                                     />
-                                    <div className='pt-6 sm:pt-0'>
-                                        <input
-                                            type="tel"
-                                            value={phoneNumber}
-                                            onChange={handlePhoneChange}
-                                            className="bg-[#000] border border-gray-300 text-white text-sm rounded-lg block w-full p-4"
-                                            placeholder="Phone Number..."
-                                            required
-                                        />
+
+                                    <div className="flex-1">
+                                        <div className="flex items-center bg-[#000] border border-gray-300 text-gray-900 text-sm rounded-lg p-4">
+                                            <span className="mr-2 text-white">+212</span>
+                                            <input
+                                                type="tel"
+                                                value={phoneNumber}
+                                                onChange={handlePhoneChange}
+                                                className="bg-[#000] border-0 flex-1 text-white text-sm rounded-lg p-0 focus:outline-none focus:ring-0"
+                                                placeholder="1234567890"
+                                                pattern="\d*"
+                                                required
+                                            />
+                                        </div>
                                     </div>
                                 </div>
                                 <input
@@ -125,9 +139,9 @@ function Contact() {
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                                 </svg>
                             </div>
-                            <h3 className="text-lg leading-6 font-medium text-gray-900 mt-3">Successfull</h3>
+                            <h3 className="text-lg leading-6 font-medium text-gray-900 mt-3">Successful</h3>
                             <div className="px-7 py-3">
-                                <p className="text-sm font-medium text-[#000] tracking-wides">Your inscription has been successfully .</p>
+                                <p className="text-sm font-medium text-[#000] tracking-wides">Your inscription has been successful.</p>
                             </div>
                             <div className="items-center px-4 py-3">
                                 <a href="/" onClick={() => setShowAlert(false)} className="px-4 py-2 bg-[#FF0000] text-white text-base font-medium rounded-md w-96 shadow-sm">
